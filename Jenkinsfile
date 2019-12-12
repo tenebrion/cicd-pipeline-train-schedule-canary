@@ -1,7 +1,8 @@
-
+pipeline {
     agent any
     environment {
-        DOCKER_IMAGE_NAME = "xmdawgx/train-schedule"
+        //be sure to replace "willbla" with your own Docker Hub username
+        DOCKER_IMAGE_NAME = "willbla/train-schedule"
     }
     stages {
         stage('Build') {
